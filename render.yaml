@@ -1,0 +1,28 @@
+# Render service definition. When you connect this repo in Render's UI, the
+# service below is auto-detected and provisioned. All we need to set manually
+# in the Render dashboard is any environment variable flagged `sync: false`.
+services:
+  - type: web
+    name: furniture-builder-backend
+    runtime: node
+    rootDir: backend
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: AI_PROVIDER
+        value: mock
+      - key: STORAGE_PROVIDER
+        value: local
+      - key: STORAGE_DIR
+        value: /tmp/storage
+      - key: DB_PATH
+        value: /tmp/app.db
+      # When you flip AI_PROVIDER to `anthropic` or `openai`, paste the key
+      # into the Render dashboard (Environment tab) — it stays out of git.
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
