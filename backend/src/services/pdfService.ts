@@ -32,8 +32,11 @@ export async function convertPdfToImages(
   const baseName = path.parse(sourceFilename).name;
   const results: RasterizedPage[] = [];
 
-  for (let i = 0; i < pages.length; i++) {
-    const page = pages[i];
+  let i = 0;
+  for (const page of pages) {
+    if (!page.content) {
+      throw new Error(`PDF page ${i + 1} returned without content buffer`);
+    }
     const key = await storage.save(page.content, `${baseName}_p${i + 1}.png`, 'pages');
     results.push({
       pageIndex: i,
@@ -41,6 +44,7 @@ export async function convertPdfToImages(
       widthPx: page.width,
       heightPx: page.height,
     });
+    i++;
   }
   return results;
 }

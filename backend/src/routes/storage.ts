@@ -12,8 +12,8 @@ import type { StorageProvider } from '../services/storage.js';
 export function storageRouter(storage: StorageProvider): Router {
   const router = Router();
 
-  router.get('/*', (req, res) => {
-    const key = decodeURIComponent(req.params[0] ?? '');
+  router.get('/:key(*)', (req, res) => {
+    const key = decodeURIComponent(req.params.key ?? '');
     if (!key) return res.status(400).json({ error: 'Missing key' });
     let abs: string;
     try {
