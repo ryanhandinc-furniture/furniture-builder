@@ -6,6 +6,7 @@ build/
 *.log
 storage/
 data/
+!backend/src/data/
 .DS_Store
 .vite/
 coverage/

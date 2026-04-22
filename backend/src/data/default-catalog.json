@@ -1,0 +1,24 @@
+{
+  "items": [
+    { "id": "bed-twin-xl",      "name": "Twin XL Bed",      "category": "bedroom", "widthInches": 39, "depthInches": 80, "heightInches": 24, "color": "#8ecae6", "iconShape": "rect", "source": "default" },
+    { "id": "bed-full",         "name": "Full Bed",         "category": "bedroom", "widthInches": 54, "depthInches": 75, "heightInches": 24, "color": "#8ecae6", "iconShape": "rect", "source": "default" },
+    { "id": "bed-queen",        "name": "Queen Bed",        "category": "bedroom", "widthInches": 60, "depthInches": 80, "heightInches": 24, "color": "#8ecae6", "iconShape": "rect", "source": "default" },
+    { "id": "nightstand",       "name": "Nightstand",       "category": "bedroom", "widthInches": 22, "depthInches": 18, "heightInches": 26, "color": "#a3b18a", "iconShape": "rect", "source": "default" },
+    { "id": "dresser",          "name": "Dresser",          "category": "bedroom", "widthInches": 60, "depthInches": 20, "heightInches": 32, "color": "#a3b18a", "iconShape": "rect", "source": "default" },
+    { "id": "wardrobe",         "name": "Wardrobe",         "category": "storage", "widthInches": 48, "depthInches": 24, "heightInches": 72, "color": "#c9ada7", "iconShape": "rect", "source": "default" },
+    { "id": "desk",             "name": "Desk",             "category": "office",  "widthInches": 48, "depthInches": 24, "heightInches": 30, "color": "#ffb703", "iconShape": "rect", "source": "default" },
+    { "id": "desk-chair",       "name": "Desk Chair",       "category": "office",  "widthInches": 22, "depthInches": 22, "heightInches": 36, "color": "#fb8500", "iconShape": "round", "source": "default" },
+    { "id": "bookshelf",        "name": "Bookshelf",        "category": "storage", "widthInches": 32, "depthInches": 12, "heightInches": 72, "color": "#c9ada7", "iconShape": "rect", "source": "default" },
+    { "id": "sofa-loveseat",    "name": "Loveseat",         "category": "living",  "widthInches": 60, "depthInches": 32, "heightInches": 34, "color": "#219ebc", "iconShape": "rect", "source": "default" },
+    { "id": "sofa-3seat",       "name": "3-Seat Sofa",      "category": "living",  "widthInches": 84, "depthInches": 36, "heightInches": 34, "color": "#219ebc", "iconShape": "rect", "source": "default" },
+    { "id": "coffee-table",     "name": "Coffee Table",     "category": "living",  "widthInches": 42, "depthInches": 22, "heightInches": 18, "color": "#b5838d", "iconShape": "rect", "source": "default" },
+    { "id": "tv-stand",         "name": "TV Stand",         "category": "living",  "widthInches": 60, "depthInches": 18, "heightInches": 24, "color": "#b5838d", "iconShape": "rect", "source": "default" },
+    { "id": "armchair",         "name": "Armchair",         "category": "living",  "widthInches": 34, "depthInches": 34, "heightInches": 36, "color": "#219ebc", "iconShape": "rect", "source": "default" },
+    { "id": "dining-table-2",   "name": "Dining Table (2)", "category": "dining",  "widthInches": 30, "depthInches": 30, "heightInches": 30, "color": "#e07a5f", "iconShape": "rect", "source": "default" },
+    { "id": "dining-table-4",   "name": "Dining Table (4)", "category": "dining",  "widthInches": 48, "depthInches": 32, "heightInches": 30, "color": "#e07a5f", "iconShape": "rect", "source": "default" },
+    { "id": "dining-chair",     "name": "Dining Chair",     "category": "dining",  "widthInches": 18, "depthInches": 18, "heightInches": 36, "color": "#f2cc8f", "iconShape": "rect", "source": "default" },
+    { "id": "barstool",         "name": "Barstool",         "category": "dining",  "widthInches": 16, "depthInches": 16, "heightInches": 30, "color": "#f2cc8f", "iconShape": "round", "source": "default" },
+    { "id": "kitchen-island",   "name": "Kitchen Island",   "category": "dining",  "widthInches": 72, "depthInches": 36, "heightInches": 36, "color": "#e9c46a", "iconShape": "rect", "source": "default" },
+    { "id": "rug-5x7",          "name": "Rug 5x7",          "category": "other",   "widthInches": 60, "depthInches": 84, "heightInches": 1,  "color": "#dad7cd", "iconShape": "rect", "source": "default" }
+  ]
+}
