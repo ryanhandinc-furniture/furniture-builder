@@ -1,6 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
 import type { Plan } from '../types';
-import { api } from '../api/client';
 
 export function UploadView({ onUploaded }: { onUploaded: (plan: Plan) => void }) {
   const [dragging, setDragging] = useState(false);

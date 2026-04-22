@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/api/client.ts","./src/components/FurnitureCanvas.tsx","./src/components/FurnitureSidebar.tsx","./src/components/ManualMatrixEntry.tsx","./src/components/PlanList.tsx","./src/components/UnitDashboard.tsx","./src/components/UnitDetail.tsx","./src/components/UploadView.tsx","./src/types/index.ts"],"version":"5.9.3"}
