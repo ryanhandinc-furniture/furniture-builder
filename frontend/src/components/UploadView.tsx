@@ -1,6 +1,12 @@
 import { useCallback, useRef, useState } from 'react';
 import type { Plan } from '../types';
 
+// Same pattern as api/client.ts — in dev, VITE_API_URL is undefined and Vite's
+// proxy forwards /api/* to localhost:4000. In production on Vercel, this is
+// set to the Render backend URL so the XHR upload hits the backend directly
+// instead of the Vercel origin (which has no API routes and returns 405).
+const API_BASE: string = import.meta.env.VITE_API_URL ?? '';
+
 export function UploadView({ onUploaded }: { onUploaded: (plan: Plan) => void }) {
   const [dragging, setDragging] = useState(false);
   const [progress, setProgress] = useState<number | null>(null);
@@ -17,7 +23,7 @@ export function UploadView({ onUploaded }: { onUploaded: (plan: Plan) => void })
         // AI extraction proceeds asynchronously.
         const plan = await new Promise<Plan>((resolve, reject) => {
           const xhr = new XMLHttpRequest();
-          xhr.open('POST', '/api/plans/upload');
+          xhr.open('POST', `${API_BASE}/api/plans/upload`);
           xhr.upload.onprogress = (ev) => {
             if (ev.lengthComputable) {
               setProgress(Math.round((ev.loaded / ev.total) * 100));
